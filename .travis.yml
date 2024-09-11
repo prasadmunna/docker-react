@@ -8,3 +8,16 @@ before_install:
 
 script:
   -docker run rasadmunna/docker-react npm run test -- --coverage
+
+deploy:
+  provider: elasticbeanstalk
+  region: "us-west-2"
+  app: "my-aws-elasticbeanstalk-app"
+  env: "my-env"
+  app: "my-aws-elasticbeanstalk-app"
+  bucket_name: "-us-west-2-bkjbk12343123bkjb3123"
+  bucket_path: "docker"
+
+on:
+  branch: master
+
