@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          React app running from docker ..
+          React app running from docker from feature brnach ..
         </p>
         <a
           className="App-link"
